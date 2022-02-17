@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Create map {% endblock %}</h1>
+    <form method="post">
+        <label for="user">User</label>
+        <br>
+        <input type="text" name="user"
+               placeholder="anrom7"
+               value="{{ request.form['user'] }}"></input>
+        <br>
+        <br>
+        <label for="friends_number">Number of friends</label>
+        <br>
+        <input type="number" name="friends_number"
+               placeholder="10"
+               value="{{ request.form['friends_number'] }}"></input>
+        <br>
+        <button type="submit">Find</button>
+    </form>
+{% endblock %}
+
