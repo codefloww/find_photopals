@@ -53,8 +53,6 @@ def find_friends(user, friends_number):
             coords = find_coords(location)
             if coords != (-69, -179):
                 friends.append((name, coords))
-    with open("file.txt", "w") as file:
-        file.writelines(list(map(str, friends)))
     return friends
 
 
@@ -77,10 +75,7 @@ def find_coords(location):
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "32fc7730408b163d0fab37cd6ecce7be3c79c33e248db78b"
-messages = [
-    {"user": "User One", "friends_number": "User One Location"},
-    {"user": "User Two", "friends_number": "User Two Location"},
-]
+
 
 
 @app.route("/", methods=("GET", "POST"))
