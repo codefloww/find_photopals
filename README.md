@@ -6,9 +6,12 @@ It utilizes python with a few module such as folium, geopy, as well as some html
 Main functionality is based on username in twitter and finding that account friends locations.
 
 ## Usage
-You go to this [link](http://celesteron.pythonanywhere.com) to the web application.
+You go to this [link](http://celesteron.pythonanywhere.com/) to the web application.
 In first field you type twitter account name.
 In second field you type number of friends to display.
+### Warning
+If you want to see a big number of friends it could be a problem with pythonanywhere server.
+Also map can process for some time.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
